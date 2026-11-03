@@ -5,8 +5,6 @@ class Solution:
         i=0
         while i<len(nums):
             if(nums[i]<maxn):
-                nums[i]=nums[i]+1
-                c=c+1
-            else:
-                i=i+1
+                c=c+(maxn-nums[i])
+            i=i+1
         return c
